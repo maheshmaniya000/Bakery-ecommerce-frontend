@@ -1,0 +1,47 @@
+.container {
+	max-width: 1080px;
+	margin: 10rem auto;
+}
+
+.main_image {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.label {
+	margin-top: 5rem;
+	display: inline-block;
+	padding: 4px 6px;
+	background: #e7d8c3;
+	color: #7c7167;
+}
+
+.title {
+	margin-top: 3rem;
+	font-weight: bold;
+	font-size: 3.4rem;
+	line-height: 3.8rem;
+	letter-spacing: 0.05em;
+	color: #7e5000;
+}
+
+.date {
+	display: block;
+	margin-top: 2rem;
+	font-size: 1.5rem;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	color: #7c7167;
+}
+
+.content {
+	font-size: 1.7rem;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	color: #7e5000;
+
+	p {
+		margin-top: 30px;
+	}
+}

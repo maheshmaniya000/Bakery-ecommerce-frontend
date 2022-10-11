@@ -1,0 +1,150 @@
+.container {
+	margin: 0 auto;
+	max-width: 1140px;
+	margin-top: 50px;
+
+	h1 {
+		font-weight: bold;
+		font-size: 3.4rem;
+		line-height: 3.8rem;
+		letter-spacing: 0.05em;
+		color: #7e5000;
+		margin: 0.67em 0;
+	}
+
+	h2 {
+		margin-bottom: 3rem;
+	}
+
+	p {
+		font-size: 1.7rem;
+		line-height: 2.4rem;
+		letter-spacing: 0.05em;
+		color: #7c7167;
+	}
+
+	img {
+		margin-bottom: 2rem;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.title {
+	font-weight: bold;
+	font-size: 3.4rem;
+	line-height: 3.8rem;
+	letter-spacing: 0.05em;
+	color: #7e5000;
+	margin: 0.67em 0;
+}
+
+.intro {
+	margin: 0px 0 30px;
+}
+
+.last {
+	margin: 50px 0 100px;
+	p {
+		margin-top: 30px;
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+	a {
+		color: #7e5000;
+	}
+}
+
+.masthead {
+	height: 280px;
+	position: relative;
+	background: url(/images/about-us-masthead.png) no-repeat right;
+	background-size: cover;
+	&__image {
+		position: absolute;
+		object-fit: cover;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	&__text {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 55px;
+		display: flex;
+		align-items: center;
+		font-weight: bold;
+		font-size: 3.4rem;
+		line-height: 38px;
+		letter-spacing: 0.05em;
+		color: #7e5000;
+	}
+	&__gradient {
+		&__left {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 60%;
+			background: linear-gradient(
+				270deg,
+				#ffffff 0%,
+				rgba(255, 255, 255, 0) 100%
+			);
+			transform: rotate(180deg);
+		}
+		&__right {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 20%;
+			background: linear-gradient(
+				270deg,
+				#ffffff 0%,
+				rgba(255, 255, 255, 0) 100%
+			);
+		}
+	}
+}
+
+.row {
+	&__1 {
+		margin-bottom: 50px;
+		display: grid;
+		grid-template-columns: 500px 1fr;
+		gap: 60px;
+		align-items: center;
+		@media (max-width: 767px) {
+			grid-template-columns: minmax(0, 1fr);
+		}
+	}
+	&__2 {
+		margin-bottom: 50px;
+		display: grid;
+		grid-template-columns: 1fr 500px;
+		gap: 60px;
+		align-items: center;
+
+		@media (max-width: 767px) {
+			grid-template-columns: minmax(0, 1fr);
+		}
+		&__image {
+			@media (max-width: 767px) {
+				grid-row-start: 1;
+			}
+		}
+		&__text {
+			@media (max-width: 767px) {
+				grid-row-start: 2;
+			}
+		}
+	}
+	&__description {
+		margin-top: 30px;
+	}
+}

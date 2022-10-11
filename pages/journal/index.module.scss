@@ -1,0 +1,35 @@
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 50px 30px;
+	margin: 50px 0;
+
+	@media (max-width: 768px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (max-width: 425px) {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+.title {
+	font-weight: bold;
+	font-size: 3.4rem;
+	line-height: 3.8rem;
+	letter-spacing: 0.05em;
+	color: #7e5000;
+}
+
+.description {
+	font-weight: bold;
+	font-size: 2.2rem;
+	line-height: 2.4rem;
+	letter-spacing: 0.05em;
+	color: #7e5000;
+}

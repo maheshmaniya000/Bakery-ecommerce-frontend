@@ -1,0 +1,24 @@
+.container {
+	max-width: 1080px;
+	margin: 120px auto;
+
+	h1 {
+		font-weight: bold;
+		font-size: 3.4rem;
+		line-height: 3.8rem;
+		letter-spacing: 0.05em;
+		color: #7e5000;
+	}
+}
+
+.content {
+	margin-top: 50px;
+	font-size: 1.7rem;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	color: #7e5000;
+
+	p {
+		margin-bottom: 30px;
+	}
+}

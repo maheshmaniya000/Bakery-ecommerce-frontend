@@ -1,0 +1,56 @@
+.image {
+	width: 360px;
+	height: 256px;
+	max-width: 100%;
+	object-fit: cover;
+
+	@media (max-width: 768px) {
+		width: 100%;
+	}
+}
+
+.info {
+	margin-top: -4px;
+	border: 1px solid #7c7167;
+	padding: 30px 20px;
+}
+
+.label {
+	display: inline-block;
+	padding: 4px 6px;
+	background: #e7d8c3;
+	color: #7c7167;
+}
+
+.title {
+	margin-top: 2rem;
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 2.2rem;
+	letter-spacing: 0.05em;
+	color: #7e5000;
+}
+
+.date {
+	margin-top: 2rem;
+	display: block;
+	font-size: 1.5rem;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	color: #7c7167;
+}
+
+.learn {
+	margin-top: 2rem;
+	display: inline-block;
+	font-size: 1.5rem;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	text-decoration-line: underline;
+	color: #7e5000;
+}
+
+.container {
+	cursor: pointer;
+	text-decoration: none;
+}
